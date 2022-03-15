@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+.doboz {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #192220, #8cac9d, #192220);
+    padding: 20px;
+    margin: auto;
+    border-radius: 16px;
+    box-shadow: -1px -1px 2px, 1px 1px 4px, inset 5px 5px 6px #3f4d46, inset -5px -5px 6px #141d1a;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.felulet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "AC AC oszt szor"
+    "het nyolc kilenc minusz"
+    "negy ot hat plusz"
+    "egy ketto harom egyenlo"
+    "nulla nulla egesz egyenlo"
+    ;
+}
+
+.gomb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    padding: 10px 20px;
+    margin: 6px;
+    background-color: #828b7f;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: -1px -1px 2px, 1px 1px 4px, inset 3px 3px 4px #b1beae, inset -3px -3px 4px #313330;
+}
+
+.kep {
+    grid-area: kep;
+    margin: 12px 6px 20px 6px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 4px, inset -1px -1px 2px;
+    background-color: #8fa553;
+    text-align: right;
+    font-size: 24px;
+}
+
+.kep input {
+    width: 100%;
+    padding: 5px 2px;
+    text-align: right;
+    font-size: 18px;
+    color: black;
+    background-color: #8fa553;
+    border: none;
+}
+
+.kep input::placeholder {
+    color: black;
+}
+
+.nulla {
+    grid-area: nulla;
+}
+
+.AC {
+    grid-area: AC;
+}
+
+.egyenlo {
+    grid-area: egyenlo;
+}
