@@ -1,2 +1,3 @@
 # calculator
-Well it's a calculator
+Well it's a calculator...  
+Written in React, for a FCC project.
